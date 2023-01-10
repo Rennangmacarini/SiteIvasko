@@ -45,3 +45,61 @@
     }
 }
 
+@media(max-width: 1200px) {
+    .main {
+        flex-direction: column;
+
+        .content {
+            margin-bottom: 4rem;
+
+            P {
+                margin: 0 auto;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 600px;
+                margin-left: 0rem;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 700px) {
+    .main {
+        .content {
+            width: 500px;
+            margin-bottom: 4rem;
+
+            P {
+                width: 400px;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 600px) {
+    .main {
+        .content {
+            width: 400px;
+            P {
+                width: 350px;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}

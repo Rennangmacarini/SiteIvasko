@@ -19,33 +19,33 @@
         gap: 0.3rem;
 
 
-        a{
+        a {
             font-size: 1.3rem;
         }
     }
 
-    .information{
-        h1{
+    .information {
+        h1 {
             font-size: 1.5rem;
         }
 
-        h2{
+        h2 {
             font-size: 1.2rem;
         }
     }
 
 
-    .payment{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 1rem;
+    .payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
 
-        h1{
+        h1 {
             font-size: 1.5rem;
         }
 
-        .card{
+        .card {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -60,9 +60,9 @@
             }
 
         }
-        
-       
-      
+
+
+
     }
 
 
@@ -75,15 +75,16 @@
         border-left: 5px solid var(--gray-300);
         border-radius: 8px;
 
-        h1{
+        h1 {
             font-size: 1.3rem;
         }
 
-        .netCard{
+        .netCard {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
+
             div {
                 padding: 0.6rem 0.4rem;
                 background-color: var(--gray-300);
@@ -91,12 +92,31 @@
 
                 img {
                     width: 25px;
-                }  
+                }
             }
         }
 
-       
+
 
     }
 
+}
+
+@media(max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+    }
+
+}
+
+
+@media(max-width: 700px) {
+    .footer {
+        flex-direction: column;
+
+        .nets {
+            padding-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Evento } from "./evento";
 import styles from "./styles.module.scss";
 
 export function Header() {
@@ -6,6 +7,7 @@ export function Header() {
     <header>
       <div className={styles.header}>
         <img src="/images/logo.png" alt="Logo ivasko" />
+        <img className={styles.buttonMobile} src="./icon/menu.png" alt="" />
         <div className={styles.menu}>
           <Link href={"/"}>Início</Link>
           <Link href={"/about"}>Quem Somos</Link>
@@ -19,7 +21,11 @@ export function Header() {
           >
             Trabalhe Conosco
           </Link>
-          <span>CARTÃO IVASKO</span>
+          <Link 
+          href="https://meucartao.senff.com.br/ivasko/bem-vindo"
+          target={"_blank"}
+          rel="noreferrer"
+          >CARTÃO IVASKO</Link>
         </div>
         <div className={styles.icon}>
           <div>
@@ -53,6 +59,8 @@ export function Header() {
           </div>
         </div>
       </div>
+
+      <Evento/>
     </header>
   );
 }

@@ -26,6 +26,93 @@
             color: var(--gray-850);
         }
     }
+}
 
+@media(max-width:1200px){
+
+    .banner {
+        .text {
+            h1{
+                font-size: 5rem;
+            }
     
+            h3 {
+                font-size: 5rem;
+                margin-top: -2.5rem;
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:900px){
+
+    .banner {
+        .text {
+            top: 30%;
+            left: 50%;  
+            h1{
+                font-size: 4rem;
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .banner {
+        .text {
+            top: 30%;
+            left: 50%;  
+    
+            h1{
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 4rem;
+                margin-top: -1.5rem;
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .banner {
+        .text {
+            top: 20%;
+            left: 45%;  
+
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:400px){
+
+    .banner {
+        .text {
+            left: 30%;  
+    
+            h1{
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                font-size: 3rem;
+                margin-top: -1.5rem;
+            }
+        }
+    }
+
 }

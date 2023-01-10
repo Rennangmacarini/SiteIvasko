@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export function Footer() {
@@ -40,13 +42,26 @@ export function Footer() {
         <h1>SIGA-NOS</h1>
         <div className={styles.netCard}>
           <div>
+            <Link href="https://www.instagram.com/superivasko/"
+              target={"_blank"}
+              rel="noreferrer">
             <img src="/assets/insta.png" alt="" />
+            </Link>
           </div>
           <div>
+          <Link href="https://www.facebook.com/superivasko/"
+              target={"_blank"}
+              rel="noreferrer"> 
             <img src="/assets/face.png" alt="" />
+            </Link>
           </div>
+          
           <div>
+            <Link href="https://br.linkedin.com/company/grupoivasko"
+              target={"_blank"}
+              rel="noreferrer"> 
             <img src="/assets/linkedin.png" alt="" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    z-index: 999;
+    z-index: 5;
     width: 100%;
     top: 0;
 
@@ -15,7 +15,12 @@
     font-family: 'Exo 2' !important;
     font-size: 1rem;
    
-    
+    .buttonMobile {
+        position: absolute;
+        left: 5rem;
+        width: 40px;
+        display: none;
+    }
    
 
     img {
@@ -25,6 +30,8 @@
     .menu {
         display: flex;
         gap: 1rem;
+
+      
 
            span, a {
             color: var(--gray-50);
@@ -61,3 +68,111 @@
         }
     }
 }
+
+
+.globalMobile{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+    display: none;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .menuMobile{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+        background:var(--gray-300);
+
+        .contentMenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            color: var(--white);
+
+            a {
+                color: var(--gray-50);
+                padding: 0.5rem;
+    
+                &:hover{
+                    filter: brightness(0.5);
+                }
+    
+                &:nth-child(7) {
+                    background-color: var(--white);
+                    color: var(--gray-300);
+                    border-radius: 12px;
+    
+                    &:hover {
+                        background-color: var(--white) ;
+                        color: var(--gray-300);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1850px){
+
+    .header {
+        .menu {
+            display: flex;
+            gap: 1rem;
+            font-size: 12px;
+        }
+    } 
+}
+
+@media(max-width: 1300px){
+
+    .header {
+
+        .buttonMobile {
+            display: flex;
+        }
+       
+        .menu {
+           display: none;
+        }
+    } 
+}
+
+
+
+@media(max-width: 650px){
+
+    .header {
+        gap: 2rem;
+            .buttonMobile {
+                display: flex;
+            }
+        } 
+}
+
+
+@media(max-width: 500px){
+
+    .header {
+        gap: 1rem;
+            .buttonMobile {
+                left: 2rem;
+                display: flex;
+            }
+
+            
+    img {
+        width: 120px;
+    }
+        } 
+}
+
+

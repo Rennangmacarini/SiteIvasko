@@ -1,8 +1,8 @@
 
 import { Banner } from "../components/Banner"
 import { ContentOne } from "../components/ContentOne"
-import { ContentThree } from "../components/ContentThree"
-import { ContentTwo } from "../components/ContentTwo"
+import { ContentThree } from "../components/ContentTwo"
+import { ContentTwo } from "../components/ContentThree"
 import { Video } from "../components/filme"
 import { Footer } from "../components/footer"
 import { Header } from "../components/Header"

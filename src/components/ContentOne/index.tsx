@@ -38,11 +38,9 @@ type Post = {
   title: String;
   excerpt: String;
 }
-
 interface PostProps{
   post: Post[]
 }
-
 export function ContentOne({ post }: PostProps) {
   return (
     <div className={styles.main}>
@@ -59,17 +57,14 @@ export function ContentOne({ post }: PostProps) {
     </div>
   );
 }
-
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient()
-
   const response = await prismic.query(
   [Prismic.predicates.at('document.type', 'publication')],
   {
     fetch: ['publication.title', 'publication.content'],
     pageSize: 100,
   })
-
   const posts = response.results.map(post => {
     return {
       id: post.uid,
