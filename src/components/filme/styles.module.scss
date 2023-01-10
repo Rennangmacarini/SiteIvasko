@@ -33,3 +33,10 @@
         height: 220px;
     }
 }
+
+@media(max-width: 500px){
+    .iframe {
+        width: 380px;
+        height: 200px;
+    }
+}
