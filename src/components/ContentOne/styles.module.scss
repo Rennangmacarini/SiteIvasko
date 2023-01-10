@@ -103,3 +103,20 @@
         }
     }
 }
+
+@media(max-width: 500px) {
+    .main {
+        .content {
+            width: 350px;
+            P {
+                width: 300px;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 350px;
+            }
+        }
+    }
+}

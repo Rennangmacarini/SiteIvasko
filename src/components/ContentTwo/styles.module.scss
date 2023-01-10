@@ -25,3 +25,11 @@
         }
     }
 }
+
+@media(max-width: 600px){
+    .card{
+        img{
+            width: 350px;
+        }
+    }
+}
