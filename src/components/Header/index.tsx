@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header>
       <div className={styles.header}>
-        <img src="/images/logo.png" alt="Logo ivasko" />
+        <img className={styles.logo} src="/images/logo.png" alt="Logo ivasko" />
         <img className={styles.buttonMobile} src="./icon/menu.png" alt="" />
         <div className={styles.menu}>
           <Link href={"/"}>Início</Link>
