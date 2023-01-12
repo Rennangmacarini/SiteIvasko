@@ -1,4 +1,3 @@
-
 import { Banner } from "../components/Banner"
 import { ContentOne } from "../components/ContentOne"
 import { ContentThree } from "../components/ContentTwo"
