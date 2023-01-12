@@ -13,7 +13,7 @@ export function Header() {
           <Link href={"/about"}>Quem Somos</Link>
           <Link href={"/stores"}>Lojas</Link>
           <Link href={"/books"}>Livro de Receitas</Link>
-          <Link href={"/Router"}>Departamento</Link>
+          <Link href={"/Router"}>ROUTER</Link>
           <Link
             href="https://app.skeel.com.br/ivasko"
             target={"_blank"}
