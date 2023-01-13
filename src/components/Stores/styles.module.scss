@@ -1,5 +1,6 @@
 .title {
-    padding: 10rem 0rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
     text-align: center;
 
     h1 {
@@ -68,8 +69,6 @@
 @media(max-width: 1200px) {
 
     .title {
-        margin-top: 8rem;
-        margin-bottom: 3rem;
         text-align: center;
 
         h1 {
@@ -102,6 +101,10 @@
 
 
 @media(max-width: 600px) {
+
+    .title {
+        padding-top: 1rem;
+    }
 
         .content {
             .cards {

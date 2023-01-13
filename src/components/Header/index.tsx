@@ -1,13 +1,22 @@
 import Link from "next/link";
-import { Evento } from "./evento";
+import { useState } from "react";
+import { MenuContainer } from "./styles";
 import styles from "./styles.module.scss";
 
 export function Header() {
+
+  const [openMenu, setOpenMenu,] = useState(false);
+  const handleOpen = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <header>
       <div className={styles.header}>
         <img className={styles.logo} src="/images/logo.png" alt="Logo ivasko" />
-        <img className={styles.buttonMobile} src="./icon/menu.png" alt="" />
+        <span onClick={handleOpen}  >{openMenu !== true ? (<img className={styles.buttonMobile}  src="./icon/menu.png" alt="" />) : (<img className={styles.buttonMobile}  src="./images/menu.png" alt="" />
+          )}
+        </span>
         <div className={styles.menu}>
           <Link href={"/"}>Início</Link>
           <Link href={"/about"}>Quem Somos</Link>
@@ -60,7 +69,33 @@ export function Header() {
         </div>
       </div>
 
-      <Evento/>
+      <MenuContainer className={openMenu !== true ? ' ' : 'open'}>
+      <div className={styles.menuMobile}>
+        <div className={styles.contentMenu}>
+          <Link href={"/"}>Início</Link>
+          <Link href={"/about"}>Quem Somos</Link>
+          <Link href={"/stores"}>Lojas</Link>
+          <Link href={"/books"}>Livro de Receitas</Link>
+          <Link href="/">Delivery</Link>
+          <Link
+            href="https://app.skeel.com.br/ivasko"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Trabalhe Conosco
+          </Link>
+          <Link
+            href="https://meucartao.senff.com.br/ivasko/bem-vindo"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            CARTÃO IVASKO
+          </Link>
+        </div>
+      </div>
+    </MenuContainer>
+
+
     </header>
   );
 }
